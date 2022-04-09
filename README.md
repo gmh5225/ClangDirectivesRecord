@@ -11,3 +11,9 @@ int g_x = 3;
 #pragma data_seg(pop, label)
 
 ```
+
+```C++
+// Make 'myfunc' function inside '.virs' section
+__declspec(code_seg(".virs"))
+int myfunc();
+```
